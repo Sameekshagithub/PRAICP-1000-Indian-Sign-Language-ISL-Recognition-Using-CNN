@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Streamlit: run app.py",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": ["run", "app.py"],
+      "justMyCode": true
+    },
+    {
+      "name": "Train model (quick test)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/train_model.py",
+      "args": ["--epochs", "3", "--max-per-class", "30"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Train model (full)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/train_model.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}
